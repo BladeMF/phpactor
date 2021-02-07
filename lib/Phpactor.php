@@ -48,6 +48,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Phpactor\Extension\ClassToFileExtra\ClassToFileExtraExtension;
 use Composer\XdebugHandler\XdebugHandler;
 use Phpactor\ConfigLoader\ConfigLoaderBuilder;
+use Phpactor\Extension\LanguageServerRename\LanguageServerRenameExtension;
 use Phpactor\Extension\ReferenceFinderRpc\ReferenceFinderRpcExtension;
 use Phpactor\Extension\ReferenceFinder\ReferenceFinderExtension;
 
@@ -134,6 +135,7 @@ class Phpactor
             LanguageServerSymbolProviderExtension::class,
             LanguageServerSelectionRangeExtension::class,
             LanguageServerExtraExtension::class,
+            LanguageServerRenameExtension::class,
             IndexerExtension::class,
         ];
 
